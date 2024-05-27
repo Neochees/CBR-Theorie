@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Countdown Timer</title>
+        <style>
+            
+            #countdown {
+                font-size: 48px;
+                text-align: center;
+                font-weight: bold;
+                color: #ffffff;
+                background-color: rgb(112, 112, 230);
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="countdown"></h1>
+        <script>
+            let seconds = 9;
+            let interval = setInterval(countdown, 1000);
+
+            function countdown() {
+                if (seconds === 0) {
+                    clearInterval(interval);
+                    const countdownElement = document.querySelector('#countdown');
+                    countdownElement.textContent = "Countdown finished!";
+                } else {
+                    seconds--;
+                    const countdownElement = document.querySelector('#countdown');
+                    countdownElement.textContent = String(seconds);
+                }
+            }
+        </script>
+    </body>
+</html>
