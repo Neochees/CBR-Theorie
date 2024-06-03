@@ -27,8 +27,6 @@ async function fetchData() {
     }
 }
 
-function find_item(data) { };
-
 function build(data) {
     random_factor = Math.floor(Math.random() * data.length);
     document.getElementById('questionImage').src = "./assets/img/" + data[random_factor]["image"]
