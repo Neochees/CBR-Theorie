@@ -40,6 +40,7 @@ async function getData(url) {
     const question = await response.json();
     console.log(question)
     document.getElementById("text").innerHTML = question.question;
-    document.getElementById("answer").innerHTML = question.options;
+    document.getElementById("answerOne").innerHTML = question.options[0];
+    document.getElementById("answerTwo").innerHTML = question.options[1];
     document.getElementById("questionImage").src = "./assets/img/"+question.image;
   }
