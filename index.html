@@ -15,12 +15,12 @@
         <img id="questionImage" alt="Plaatje voor vraag">
         <div id="text"></div>
         <form id="answer">
-            <input type="radio" name="answer">
-            <label id="answerOne"></label>
-            <input type="radio" name="answer">
-            <label id="answerTwo"></label>
-        </form>
-        <div id="submit"></div>
+            <input type="radio" name="answer" id="option1" value="option1" required>
+            <label id="answerOne" for="option1">Option 1</label>
+            <input type="radio" name="answer" id="option2" value="option2">
+            <label id="answerTwo" for="option2">Option 2</label>
+            <input type="submit">
+        </form>        
     </div>
     <script src="./assets/js/script.js"></script>
 </body>
